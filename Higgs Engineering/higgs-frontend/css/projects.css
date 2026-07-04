@@ -1,0 +1,353 @@
+/* ========================= */
+/* GLOBAL */
+/* ========================= */
+
+/* body styling */
+body {
+
+    /* remove default spacing */
+    margin: 0;
+
+    /* dark background */
+    background: #0a0a0a;
+
+    /* text color */
+    color: white;
+
+    /* font */
+    font-family: 'Orbitron', sans-serif;
+
+    /* prevent horizontal scroll */
+    overflow-x: hidden;
+
+}
+
+/* background canvas */
+#bg {
+
+    /* fixed background */
+    position: fixed;
+
+    /* top */
+    top: 0;
+
+    /* left */
+    left: 0;
+
+    /* full width */
+    width: 100%;
+
+    /* full height */
+    height: 100%;
+
+    /* behind content */
+    z-index: 0;
+
+}
+
+/* ========================= */
+/* NAVBAR */
+/* ========================= */
+
+/* Navbar styling */
+.navbar {
+
+  /* Fixed at top */
+  position: fixed;
+
+  /* Full width */
+  width: 100%;
+
+  /* Above content */
+  z-index: 1000;
+
+  /* Dark transparent bg */
+  background: rgba(0,0,0,0.9);
+
+  /* Blur effect */
+  backdrop-filter: blur(12px);
+
+  /* Bottom border */
+  border-bottom: 1px solid rgba(255,215,0,0.3);
+
+}
+
+/* Navbar container */
+.nav-container {
+
+  /* Flex layout */
+  display: flex;
+
+  /* Center items vertically */
+  align-items: center;
+
+  /* allow full width */
+  width: 100%;
+
+  /* spacing */
+  padding: 15px 50px;
+
+  /* fix sizing */
+  box-sizing: border-box;
+
+}
+
+/* Logo section */
+.logo-text {
+
+  /* Large font size */
+  font-size: 32px;
+
+  /* Bold text */
+  font-weight: 800;
+
+  /* Gold color */
+  color: #FFD700;
+
+  /* Glow effect */
+  text-shadow: 0 0 12px rgba(255,215,0,0.8);
+
+}
+
+/* Logo subtext */
+.logo-sub {
+
+  /* Small text */
+  font-size: 10px;
+
+  /* Light grey color */
+  color: #ccc;
+
+  /* Letter spacing */
+  letter-spacing: 2px;
+
+}
+
+/* Nav links container */
+.nav-links {
+
+  /* Push to right */
+  margin-left: auto;
+
+  /* Move closer to right edge */
+  margin-right: 20px;
+
+  /* Flex layout */
+  display: flex;
+
+  /* Space between links */
+  gap: 40px;
+
+}
+
+/* Nav links */
+.nav-links a {
+
+  /* White text */
+  color: white;
+
+  /* Remove underline */
+  text-decoration: none;
+
+  /* Font size */
+  font-size: 18px;
+
+  /* Smooth hover */
+  transition: 0.3s;
+
+}
+
+/* Nav hover */
+.nav-links a:hover {
+
+  /* Gold color */
+  color: #FFD700;
+
+  /* Glow effect */
+  text-shadow: 0 0 10px #FFD700;
+
+}
+
+/* ========================= */
+/* PROJECTS */
+/* ========================= */
+
+/* projects section */
+.projects {
+
+    /* relative positioning */
+    position: relative;
+
+    /* above background */
+    z-index: 1;
+
+    /* spacing */
+    padding: 180px 80px 100px;
+
+    /* centered */
+    text-align: center;
+
+}
+
+/* title */
+.title {
+
+    /* large text */
+    font-size: 3.5rem;
+
+    /* gold */
+    color: #FFD700;
+
+    /* spacing */
+    margin-bottom: 20px;
+
+    /* glow */
+    text-shadow: 0 0 20px rgba(255,215,0,0.8);
+
+}
+
+/* subtitle */
+.subtitle {
+
+    /* grey */
+    color: #aaa;
+
+    /* width */
+    max-width: 800px;
+
+    /* center */
+    margin: auto;
+
+    /* spacing */
+    margin-bottom: 70px;
+
+    /* line height */
+    line-height: 1.8;
+
+}
+
+/* ========================= */
+/* GRID */
+/* ========================= */
+
+/* grid */
+.grid {
+
+    /* grid layout */
+    display: grid;
+
+    /* responsive columns */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+    /* spacing */
+    gap: 40px;
+
+}
+
+/* cards */
+.card {
+
+    /* glass effect */
+    background: rgba(255,255,255,0.03);
+
+    /* border */
+    border: 1px solid rgba(255,215,0,0.2);
+
+    /* blur */
+    backdrop-filter: blur(10px);
+
+    /* rounded */
+    border-radius: 20px;
+
+    /* padding */
+    padding: 40px 30px;
+
+    /* transition */
+    transition: 0.4s;
+
+    /* subtle glow */
+    box-shadow: 0 0 20px rgba(255,215,0,0.05);
+
+}
+
+/* hover */
+.card:hover {
+
+    /* lift */
+    transform: translateY(-10px);
+
+    /* glow */
+    box-shadow: 0 0 30px rgba(255,215,0,0.2);
+
+    /* border glow */
+    border-color: rgba(255,215,0,0.5);
+
+}
+
+/* card heading */
+.card h2 {
+
+    /* gold */
+    color: #FFD700;
+
+    /* spacing */
+    margin-bottom: 20px;
+
+    /* line height */
+    line-height: 1.5;
+
+}
+
+/* paragraph */
+.card p {
+
+    /* light grey */
+    color: #bbb;
+
+    /* line spacing */
+    line-height: 1.7;
+
+    /* spacing */
+    margin-bottom: 30px;
+
+}
+
+/* buttons */
+.card button {
+
+    /* gold */
+    background: #FFD700;
+
+    /* black text */
+    color: black;
+
+    /* no border */
+    border: none;
+
+    /* spacing */
+    padding: 14px 28px;
+
+    /* rounded */
+    border-radius: 8px;
+
+    /* bold */
+    font-weight: 700;
+
+    /* cursor */
+    cursor: pointer;
+
+    /* glow */
+    box-shadow: 0 0 15px rgba(255,215,0,0.5);
+
+    /* transition */
+    transition: 0.3s;
+
+}
+
+/* button hover */
+.card button:hover {
+
+    /* scale */
+    transform: scale(1.05);
+
+}

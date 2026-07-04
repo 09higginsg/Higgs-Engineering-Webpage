@@ -1,0 +1,171 @@
+<!-- HOME PAGE -->
+<!-- HTML5 document -->
+<!DOCTYPE html>
+
+<!-- Page language -->
+<html lang="en">
+
+<!-- Head section -->
+<head>
+
+  <!-- Character encoding -->
+  <meta charset="UTF-8">
+
+  <!-- Page title -->
+  <title>Higgs Engineering</title>
+
+  <!-- Responsive scaling -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap framework -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Orbitron font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+<!-- End head -->
+</head>
+
+<!-- Body start -->
+<body>
+
+<!-- Background container -->
+<div id="bg"></div>
+
+<!-- Navigation bar -->
+<nav class="navbar">
+
+  <!-- Nav wrapper -->
+  <div class="nav-container">
+
+    <!-- Logo section -->
+    <div class="logo-text">
+
+      <!-- Main logo text -->
+      HIGGS ENGINEERING
+
+      <!-- Tagline -->
+      <div class="logo-sub">INNOVATIVE DESIGN CONSULTANTS</div>
+
+    <!-- End logo section -->
+    </div>
+
+    <!-- Navigation links -->
+<div class="nav-links">
+
+  <!-- Home link -->
+  <a href="index.html">Home</a>
+
+  <!-- Services link -->
+  <a href="services.html">Services</a>
+
+  <!-- Contact link -->
+  <a href="contact.html">Contact</a>
+
+
+    <!-- End nav links -->
+    </div>
+
+  <!-- End nav wrapper -->
+  </div>
+
+<!-- End navbar -->
+</nav>
+
+<!-- Hero section -->
+<section class="hero">
+
+  <!-- Centered container -->
+  <div class="container text-center">
+
+    <!-- Main headline -->
+    <h1 class="hero-title">Accurate Drawings. Faster Approvals. Better Network Builds</h1>
+
+    <!-- Sub headline -->
+    <p class="hero-sub">Specialists in wireless telecom CAD drafting, producing detailed, standards-compliant drawings for every stage of network design and construction.</p>
+
+    <!-- Buttons wrapper -->
+    <div class="mt-4 hero-buttons">
+
+      <!-- Chat button -->
+      <button class="btn btn-primary-custom me-3" onclick="toggleChat()">Start a chat with our agent</button>
+
+  <button class="btn btn-outline-custom"
+        onclick="location.href='services.html'">
+  Explore services
+</button>
+
+    <!-- End buttons -->
+    </div>
+
+  <!-- End container -->
+  </div>
+
+<!-- End hero -->
+</section>
+
+<!-- Floating chat icon -->
+<div id="chatButton" onclick="toggleChat()">
+
+  <!-- Chat icon -->
+  💬
+
+  <!-- unread badge -->
+  <span id="chatBadge">1</span>
+
+<!-- End chat button -->
+</div>
+
+<!-- Chat window -->
+<div id="chatWindow">
+
+  <!-- Chat header -->
+  <div id="chatTopBar">
+
+    <!-- Chat title -->
+    Higgs agent ✨
+
+    <!-- Close button -->
+    <span onclick="toggleChat()">✕</span>
+
+  <!-- End header -->
+  </div>
+
+  <!-- Messages container -->
+  <div id="chatMessages"></div>
+
+  <!-- Input area -->
+  <div id="chatInputArea">
+
+    <!-- Text input -->
+    <input type="text" id="chatInput" placeholder="Type a message...">
+
+    <!-- Send button -->
+    <button onclick="sendMessage()">➤</button>
+
+  <!-- End input area -->
+  </div>
+
+<!-- End chat window -->
+</div>
+
+
+<!-- Footer -->
+<footer class="footer">
+  <p>© 2026 Higgs Engineering. All rights reserved.</p>
+</footer>
+
+<!-- Three.js library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<!-- Main JS file -->
+<script src="js/main.js"></script>
+
+<!-- End body -->
+</body>
+
+<!-- End HTML -->
+</html>

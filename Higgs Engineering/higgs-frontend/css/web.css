@@ -1,0 +1,460 @@
+/* ========================= */
+/* GLOBAL */
+/* ========================= */
+
+body {
+
+    /* remove spacing */
+    margin: 0;
+
+    /* dark background */
+    background: #050505;
+
+    /* text color */
+    color: white;
+
+    /* futuristic font */
+    font-family: 'Orbitron', sans-serif;
+
+    /* prevent horizontal scroll */
+    overflow-x: hidden;
+
+}
+
+/* ========================= */
+/* BACKGROUND */
+/* ========================= */
+
+#bg {
+
+    /* fixed */
+    position: fixed;
+
+    /* top */
+    top: 0;
+
+    /* left */
+    left: 0;
+
+    /* full width */
+    width: 100%;
+
+    /* full height */
+    height: 100%;
+
+    /* behind content */
+    z-index: 0;
+
+}
+
+/* ========================= */
+/* NAVBAR */
+/* ========================= */
+
+/* Navbar styling */
+.navbar {
+
+  /* Fixed at top */
+  position: fixed;
+
+  /* Full width */
+  width: 100%;
+
+  /* Above content */
+  z-index: 1000;
+
+  /* Dark transparent bg */
+  background: rgba(0,0,0,0.9);
+
+  /* Blur effect */
+  backdrop-filter: blur(12px);
+
+  /* Bottom border */
+  border-bottom: 1px solid rgba(255,215,0,0.3);
+
+}
+
+/* Navbar container */
+.nav-container {
+
+  /* Flex layout */
+  display: flex;
+
+  /* Center items vertically */
+  align-items: center;
+
+  /* Full width */
+  width: 100%;
+
+  /* Padding spacing */
+  padding: 15px 50px;
+
+  /* Fix sizing */
+  box-sizing: border-box;
+
+}
+
+/* Logo section */
+.logo-text {
+
+  /* Large font size */
+  font-size: 32px;
+
+  /* Bold text */
+  font-weight: 800;
+
+  /* Gold color */
+  color: #FFD700;
+
+  /* Glow */
+  text-shadow: 0 0 12px rgba(255,215,0,0.8);
+
+}
+
+/* Logo subtext */
+.logo-sub {
+
+  /* Small text */
+  font-size: 10px;
+
+  /* Grey */
+  color: #ccc;
+
+  /* Spacing */
+  letter-spacing: 2px;
+
+}
+
+/* Nav links container */
+.nav-links {
+
+  /* Push right */
+  margin-left: auto;
+
+  /* Right spacing */
+  margin-right: 20px;
+
+  /* Flex */
+  display: flex;
+
+  /* Gap */
+  gap: 40px;
+
+}
+
+/* Nav links */
+.nav-links a {
+
+  /* White */
+  color: white;
+
+  /* Remove underline */
+  text-decoration: none;
+
+  /* Size */
+  font-size: 18px;
+
+  /* Smooth */
+  transition: 0.3s;
+
+}
+
+/* Hover */
+.nav-links a:hover {
+
+  /* Gold */
+  color: #FFD700;
+
+  /* Glow */
+  text-shadow: 0 0 10px #FFD700;
+
+}
+
+/* ========================= */
+/* MAIN SECTION */
+/* ========================= */
+
+.project {
+
+    /* relative */
+    position: relative;
+
+    /* above background */
+    z-index: 1;
+
+    /* spacing */
+    padding: 180px 20px 100px;
+
+    /* center */
+    text-align: center;
+
+}
+
+/* Title */
+.title {
+
+    /* size */
+    font-size: 3.5rem;
+
+    /* gold */
+    color: #ffcc00;
+
+    /* glow */
+    text-shadow: 0 0 20px rgba(255,204,0,0.7);
+
+    /* spacing */
+    margin-bottom: 20px;
+
+}
+
+/* Subtitle */
+.subtitle {
+
+    /* grey */
+    color: #bbb;
+
+    /* width */
+    max-width: 700px;
+
+    /* spacing */
+    margin: 20px auto 60px;
+
+    /* line spacing */
+    line-height: 1.8;
+
+}
+
+/* ========================= */
+/* GRID */
+/* ========================= */
+
+.grid {
+
+    /* grid layout */
+    display: grid;
+
+    /* columns */
+    grid-template-columns: repeat(2, 1fr);
+
+    /* spacing */
+    gap: 30px;
+
+    /* max width */
+    max-width: 1000px;
+
+    /* center */
+    margin: auto;
+
+}
+
+/* ========================= */
+/* CARDS */
+/* ========================= */
+
+.card {
+
+    /* glass effect */
+    background: rgba(255,255,255,0.03);
+
+    /* border */
+    border: 1px solid rgba(255,204,0,0.2);
+
+    /* blur */
+    backdrop-filter: blur(10px);
+
+    /* spacing */
+    padding: 30px;
+
+    /* rounded */
+    border-radius: 20px;
+
+    /* pointer */
+    cursor: pointer;
+
+    /* transition */
+    transition: 0.4s;
+
+    /* text */
+    text-align: left;
+
+    /* subtle glow */
+    box-shadow: 0 0 20px rgba(255,204,0,0.05);
+
+}
+
+/* hover */
+.card:hover {
+
+    /* lift */
+    transform: translateY(-8px);
+
+    /* glow */
+    box-shadow: 0 0 30px rgba(255,204,0,0.2);
+
+    /* brighter border */
+    border-color: rgba(255,204,0,0.5);
+
+}
+
+/* heading */
+.card h2 {
+
+    /* gold */
+    color: #ffcc00;
+
+    /* spacing */
+    margin-bottom: 10px;
+
+}
+
+/* small text */
+.small {
+
+    /* grey */
+    color: #999;
+
+    /* size */
+    font-size: 14px;
+
+}
+
+/* expand section */
+.expand {
+
+    /* collapsed */
+    max-height: 0;
+
+    /* hide */
+    overflow: hidden;
+
+    /* transition */
+    transition: 0.5s;
+
+}
+
+/* active card */
+.card.active .expand {
+
+    /* expand */
+    max-height: 600px;
+
+    /* spacing */
+    margin-top: 20px;
+
+}
+
+/* ========================= */
+/* CANVAS BOXES */
+/* ========================= */
+
+.cursor-box {
+
+    /* full width */
+    width: 100%;
+
+    /* height */
+    height: 160px;
+
+    /* black */
+    background: black;
+
+    /* border */
+    border: 1px solid #ffcc00;
+
+    /* rounded */
+    border-radius: 10px;
+
+}
+
+/* ========================= */
+/* CITY */
+/* ========================= */
+
+.city-wrapper {
+
+    /* full width */
+    width: 100%;
+
+    /* height */
+    height: 220px;
+
+    /* hide overflow */
+    overflow: hidden;
+
+    /* rounded */
+    border-radius: 10px;
+
+    /* border */
+    border: 1px solid rgba(255,204,0,0.2);
+
+}
+
+/* city image */
+.city-img {
+
+    /* oversize */
+    width: 120%;
+
+    /* oversize */
+    height: 120%;
+
+    /* crop */
+    object-fit: cover;
+
+    /* smooth */
+    transition: 0.2s;
+
+}
+
+/* ========================= */
+/* COUNTER */
+/* ========================= */
+
+.counter {
+
+    /* size */
+    font-size: 4rem;
+
+    /* gold */
+    color: #ffcc00;
+
+    /* glow */
+    text-shadow: 0 0 20px rgba(255,204,0,0.7);
+
+    /* spacing */
+    margin: 20px 0;
+
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    .grid {
+
+        /* single column */
+        grid-template-columns: 1fr;
+
+    }
+
+    .title {
+
+        font-size: 2.5rem;
+
+    }
+
+    .nav-container {
+
+        padding: 15px 20px;
+
+    }
+
+    .nav-links {
+
+        gap: 20px;
+
+    }
+
+}

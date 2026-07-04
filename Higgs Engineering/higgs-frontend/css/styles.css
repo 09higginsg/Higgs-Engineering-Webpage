@@ -1,0 +1,537 @@
+/* Global section */
+/* ========================= */
+/* GLOBAL */
+/* ========================= */
+
+/* Body styling */
+body {
+
+  /* Remove default margin */
+  margin: 0;
+
+  /* Dark background */
+  background: #0a0a0a;
+
+  /* Default text color */
+  color: white;
+
+  /* Main font */
+  font-family: 'Orbitron', sans-serif;
+
+  /* Hide horizontal scroll */
+  overflow-x: hidden;
+
+}
+
+/* Background container */
+#bg {
+
+  /* Fixed position */
+  position: fixed;
+
+  /* Top alignment */
+  top: 0;
+
+  /* Left alignment */
+  left: 0;
+
+  /* Full width */
+  width: 100%;
+
+  /* Full height */
+  height: 100%;
+
+  /* Behind everything */
+  z-index: 0;
+
+}
+
+/* Navbar section */
+/* ========================= */
+/* NAVBAR */
+/* ========================= */
+
+/* Navbar styling */
+.navbar {
+
+  /* Fixed at top */
+  position: fixed;
+
+  /* Full width */
+  width: 100%;
+
+  /* Above content */
+  z-index: 1000;
+
+  /* Dark transparent bg */
+  background: rgba(0,0,0,0.9);
+
+  /* Blur effect */
+  backdrop-filter: blur(12px);
+
+  /* Bottom border */
+  border-bottom: 1px solid rgba(255,215,0,0.3);
+
+}
+
+/* Navbar container */
+.nav-container {
+
+  /* Flex layout */
+  display: flex;
+
+  /* Center items vertically */
+  align-items: center;
+
+  /* 🔧 FIX: allow full width so links can reach hard right */
+  width: 100%;
+
+  /* Padding spacing */
+  padding: 15px 50px;
+
+}
+
+/* Logo section */
+.logo-text {
+
+  /* Large font size */
+  font-size: 32px;
+
+  /* Bold text */
+  font-weight: 800;
+
+  /* Gold color */
+  color: #FFD700;
+
+  /* Glow effect */
+  text-shadow: 0 0 12px rgba(255,215,0,0.8);
+
+}
+
+/* Logo subtext */
+.logo-sub {
+
+  /* Small text */
+  font-size: 10px;
+
+  /* Light grey color */
+  color: #ccc;
+
+  /* Letter spacing */
+  letter-spacing: 2px;
+
+}
+
+/* Nav links container */
+.nav-links {
+
+  /* Push to right */
+  margin-left: auto;
+
+  /* Move closer to right edge */
+  margin-right: 20px;
+
+  /* Flex layout */
+  display: flex;
+
+  /* Space between links */
+  gap: 40px;
+
+}
+
+/* Nav links */
+.nav-links a {
+
+  /* White text */
+  color: white;
+
+  /* Remove underline */
+  text-decoration: none;
+
+  /* Font size */
+  font-size: 18px;
+
+  /* Smooth hover */
+  transition: 0.3s;
+
+}
+
+/* Nav hover */
+.nav-links a:hover {
+
+  /* Gold color */
+  color: #FFD700;
+
+  /* Glow effect */
+  text-shadow: 0 0 10px #FFD700;
+
+}
+
+/* Hero section */
+/* ========================= */
+/* HERO */
+/* ========================= */
+
+/* Hero container */
+.hero {
+
+  /* Relative positioning */
+  position: relative;
+
+  /* Above background */
+  z-index: 1;
+
+  /* Full screen height */
+  height: 100vh;
+
+  /* Flex layout */
+  display: flex;
+
+  /* Center vertically */
+  align-items: center;
+
+  /* Center horizontally */
+  justify-content: center;
+
+  /* Top spacing */
+  padding-top: 120px;
+
+}
+
+/* Hero heading */
+.hero h1 {
+
+  /* Large font */
+  font-size: 3.2rem;
+
+  /* Bold text */
+  font-weight: 800;
+
+}
+
+/* Hero paragraph */
+.hero p {
+
+  /* Muted text */
+  color: #aaa;
+
+}
+
+/* Buttons section */
+/* ========================= */
+/* BUTTONS */
+/* ========================= */
+
+/* Primary button */
+.btn-primary-custom {
+
+  /* Gold background */
+  background: #FFD700;
+
+  /* Dark text */
+  color: black;
+
+  /* Padding */
+  padding: 14px 30px;
+
+  /* Glow effect */
+  box-shadow: 0 0 20px #FFD700;
+
+  /* Remove border */
+  border: none;
+
+}
+
+/* Outline button */
+.btn-outline-custom {
+
+  /* Gold border */
+  border: 1px solid #FFD700;
+
+  /* Gold text */
+  color: #FFD700;
+
+  /* Transparent bg */
+  background: transparent;
+
+}
+
+/* Chat section */
+/* ========================= */
+/* CHAT */
+/* ========================= */
+
+/* Chat button */
+#chatButton {
+
+  /* Fixed position */
+  position: fixed;
+
+  /* Bottom spacing */
+  bottom: 25px;
+
+  /* Right spacing */
+  right: 25px;
+
+  /* Width */
+  width: 60px;
+
+  /* Height */
+  height: 60px;
+
+  /* Gold background */
+  background: #FFD700;
+
+  /* Dark icon */
+  color: black;
+
+  /* Circle shape */
+  border-radius: 50%;
+
+  /* Flex layout */
+  display: flex;
+
+  /* Center vertically */
+  align-items: center;
+
+  /* Center horizontally */
+  justify-content: center;
+
+  /* Icon size */
+  font-size: 24px;
+
+  /* Pointer cursor */
+  cursor: pointer;
+
+  /* Glow effect */
+  box-shadow: 0 0 20px #FFD700;
+
+  /* Above all */
+  z-index: 2000;
+
+  /* Smooth animation */
+  transition: 0.3s;
+
+}
+
+/* Hover effect */
+#chatButton:hover {
+
+  /* Slight scale */
+  transform: scale(1.1);
+
+}
+
+/* Chat window */
+#chatWindow {
+
+  /* Fixed position */
+  position: fixed;
+
+  /* Bottom spacing */
+  bottom: 100px;
+
+  /* Right spacing */
+  right: 25px;
+
+  /* Width */
+  width: 320px;
+
+  /* Height */
+  height: 420px;
+
+  /* Dark background */
+  background: #0a0a0a;
+
+  /* Gold border */
+  border: 1px solid #FFD700;
+
+  /* Rounded corners */
+  border-radius: 15px;
+
+  /* Hidden by default */
+  display: none;
+
+  /* Column layout */
+  flex-direction: column;
+
+  /* Hide overflow */
+  overflow: hidden;
+
+  /* Above all */
+  z-index: 2000;
+
+  /* Glow shadow */
+  box-shadow: 0 0 30px rgba(255,215,0,0.2);
+
+}
+
+/* Active chat */
+#chatWindow.active {
+
+  /* Show flex */
+  display: flex;
+
+}
+
+/* Chat header */
+#chatTopBar {
+
+  /* Dark bg */
+  background: #111;
+
+  /* Padding */
+  padding: 12px;
+
+  /* Gold text */
+  color: #FFD700;
+
+  /* Flex layout */
+  display: flex;
+
+  /* Space between */
+  justify-content: space-between;
+
+  /* Medium weight */
+  font-weight: 600;
+
+  /* Bottom border */
+  border-bottom: 1px solid #333;
+
+}
+
+/* Messages container */
+#chatMessages {
+
+  /* Fill space */
+  flex: 1;
+
+  /* Padding */
+  padding: 10px;
+
+  /* Scroll enabled */
+  overflow-y: auto;
+
+  /* Font size */
+  font-size: 14px;
+
+}
+
+/* AI message */
+.ai-msg {
+
+  /* Dark bubble */
+  background: #111;
+
+  /* White text */
+  color: white;
+
+  /* Padding */
+  padding: 10px;
+
+  /* Space below */
+  margin-bottom: 8px;
+
+  /* Rounded */
+  border-radius: 12px;
+
+  /* Max width */
+  max-width: 85%;
+
+}
+
+/* User message */
+.user-msg {
+
+  /* Gold bubble */
+  background: #FFD700;
+
+  /* Dark text */
+  color: black;
+
+  /* Padding */
+  padding: 10px;
+
+  /* Space below */
+  margin-bottom: 8px;
+
+  /* Rounded */
+  border-radius: 12px;
+
+  /* Align right */
+  margin-left: auto;
+
+  /* Max width */
+  max-width: 85%;
+
+  /* Right align text */
+  text-align: right;
+
+}
+
+/* Input container */
+#chatInputArea {
+
+  /* Flex layout */
+  display: flex;
+
+  /* Top border */
+  border-top: 1px solid #333;
+
+}
+
+/* Input field */
+#chatInputArea input {
+
+  /* Fill space */
+  flex: 1;
+
+  /* Padding */
+  padding: 10px;
+
+  /* Dark bg */
+  background: black;
+
+  /* White text */
+  color: white;
+
+  /* No border */
+  border: none;
+
+  /* No outline */
+  outline: none;
+
+}
+
+/* Send button */
+#chatInputArea button {
+
+  /* Gold bg */
+  background: #FFD700;
+
+  /* No border */
+  border: none;
+
+  /* Padding */
+  padding: 10px 14px;
+
+  /* Pointer cursor */
+  cursor: pointer;
+
+}
+
+/* Scrollbar width */
+#chatMessages::-webkit-scrollbar {
+
+  /* Thin scrollbar */
+  width: 6px;
+
+}
+
+/* Scrollbar thumb */
+#chatMessages::-webkit-scrollbar-thumb {
+
+  /* Gold color */
+  background: #FFD700;
+
+}

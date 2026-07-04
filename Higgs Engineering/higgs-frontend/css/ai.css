@@ -1,0 +1,435 @@
+/* ========================= */
+/* GLOBAL */
+/* ========================= */
+
+/* Body */
+body {
+
+    /* remove spacing */
+    margin: 0;
+
+    /* dark background */
+    background: #050505;
+
+    /* text color */
+    color: white;
+
+    /* futuristic font */
+    font-family: 'Orbitron', sans-serif;
+
+    /* prevent scroll */
+    overflow-x: hidden;
+
+}
+
+/* ========================= */
+/* BACKGROUND */
+/* ========================= */
+
+/* Background canvas */
+#bg {
+
+    /* fixed */
+    position: fixed;
+
+    /* top */
+    top: 0;
+
+    /* left */
+    left: 0;
+
+    /* full width */
+    width: 100%;
+
+    /* full height */
+    height: 100%;
+
+    /* behind content */
+    z-index: 0;
+
+}
+
+/* ========================= */
+/* NAVBAR */
+/* ========================= */
+
+/* Navbar styling */
+.navbar {
+
+  /* Fixed at top */
+  position: fixed;
+
+  /* Full width */
+  width: 100%;
+
+  /* Above content */
+  z-index: 1000;
+
+  /* Dark transparent bg */
+  background: rgba(0,0,0,0.9);
+
+  /* Blur effect */
+  backdrop-filter: blur(12px);
+
+  /* Bottom border */
+  border-bottom: 1px solid rgba(255,215,0,0.3);
+
+}
+
+/* Navbar container */
+.nav-container {
+
+  /* Flex layout */
+  display: flex;
+
+  /* Center items vertically */
+  align-items: center;
+
+  /* Full width */
+  width: 100%;
+
+  /* Padding spacing */
+  padding: 15px 50px;
+
+  /* Fix sizing */
+  box-sizing: border-box;
+
+}
+
+/* Logo section */
+.logo-text {
+
+  /* Large font size */
+  font-size: 32px;
+
+  /* Bold text */
+  font-weight: 800;
+
+  /* Gold color */
+  color: #FFD700;
+
+  /* Glow effect */
+  text-shadow: 0 0 12px rgba(255,215,0,0.8);
+
+}
+
+/* Logo subtext */
+.logo-sub {
+
+  /* Small text */
+  font-size: 10px;
+
+  /* Light grey color */
+  color: #ccc;
+
+  /* Letter spacing */
+  letter-spacing: 2px;
+
+}
+
+/* Nav links container */
+.nav-links {
+
+  /* Push to right */
+  margin-left: auto;
+
+  /* Move closer to right edge */
+  margin-right: 20px;
+
+  /* Flex layout */
+  display: flex;
+
+  /* Space between links */
+  gap: 40px;
+
+}
+
+/* Nav links */
+.nav-links a {
+
+  /* White text */
+  color: white;
+
+  /* Remove underline */
+  text-decoration: none;
+
+  /* Font size */
+  font-size: 18px;
+
+  /* Smooth hover */
+  transition: 0.3s;
+
+}
+
+/* Nav hover */
+.nav-links a:hover {
+
+  /* Gold color */
+  color: #FFD700;
+
+  /* Glow effect */
+  text-shadow: 0 0 10px #FFD700;
+
+}
+
+/* ========================= */
+/* MAIN SECTION */
+/* ========================= */
+
+.project {
+
+    /* above background */
+    position: relative;
+
+    /* layer */
+    z-index: 1;
+
+    /* spacing */
+    padding: 180px 20px 100px;
+
+    /* center */
+    text-align: center;
+
+}
+
+/* Title */
+.title {
+
+    /* large text */
+    font-size: 3.5rem;
+
+    /* gold */
+    color: #ffcc00;
+
+    /* spacing */
+    margin-bottom: 20px;
+
+    /* glow */
+    text-shadow: 0 0 20px rgba(255,204,0,0.7);
+
+}
+
+/* Subtitle */
+.subtitle {
+
+    /* grey */
+    color: #bbb;
+
+    /* width */
+    max-width: 700px;
+
+    /* spacing */
+    margin: 20px auto 60px;
+
+    /* line spacing */
+    line-height: 1.8;
+
+}
+
+/* ========================= */
+/* GRID */
+/* ========================= */
+
+/* Grid */
+.grid {
+
+    /* flex */
+    display: flex;
+
+    /* center */
+    justify-content: center;
+
+}
+
+/* ========================= */
+/* CARD */
+/* ========================= */
+
+/* Card */
+.card {
+
+    /* glass effect */
+    background: rgba(255,255,255,0.03);
+
+    /* border */
+    border: 1px solid rgba(255,204,0,0.2);
+
+    /* blur */
+    backdrop-filter: blur(10px);
+
+    /* spacing */
+    padding: 30px;
+
+    /* rounded */
+    border-radius: 20px;
+
+    /* width */
+    max-width: 550px;
+
+    /* text align */
+    text-align: left;
+
+    /* glow */
+    box-shadow: 0 0 20px rgba(255,204,0,0.05);
+
+    /* transition */
+    transition: 0.4s;
+
+}
+
+/* hover */
+.card:hover {
+
+    /* lift */
+    transform: translateY(-10px);
+
+    /* glow */
+    box-shadow: 0 0 30px rgba(255,204,0,0.2);
+
+    /* border */
+    border-color: rgba(255,204,0,0.5);
+
+}
+
+/* ========================= */
+/* IMAGE */
+/* ========================= */
+
+/* Image box */
+.image-box {
+
+    /* full width */
+    width: 100%;
+
+    /* height */
+    height: 260px;
+
+    /* hide overflow */
+    overflow: hidden;
+
+    /* spacing */
+    margin-bottom: 20px;
+
+    /* rounded */
+    border-radius: 15px;
+
+    /* border */
+    border: 1px solid rgba(255,204,0,0.2);
+
+}
+
+/* Image */
+.image-box img {
+
+    /* full width */
+    width: 100%;
+
+    /* full height */
+    height: 100%;
+
+    /* crop */
+    object-fit: cover;
+
+}
+
+/* ========================= */
+/* TEXT */
+/* ========================= */
+
+/* Card title */
+.card h2 {
+
+    /* gold */
+    color: #ffcc00;
+
+    /* spacing */
+    margin-bottom: 15px;
+
+}
+
+/* Card text */
+.card p {
+
+    /* grey */
+    color: #bbb;
+
+    /* spacing */
+    line-height: 1.8;
+
+}
+
+/* ========================= */
+/* BUTTON */
+/* ========================= */
+
+/* Button */
+.btn {
+
+    /* inline */
+    display: inline-block;
+
+    /* spacing */
+    margin-top: 20px;
+
+    /* padding */
+    padding: 12px 24px;
+
+    /* gold */
+    background: #ffcc00;
+
+    /* black text */
+    color: black;
+
+    /* remove underline */
+    text-decoration: none;
+
+    /* rounded */
+    border-radius: 8px;
+
+    /* bold */
+    font-weight: 700;
+
+    /* glow */
+    box-shadow: 0 0 15px rgba(255,204,0,0.4);
+
+    /* transition */
+    transition: 0.3s;
+
+}
+
+/* hover */
+.btn:hover {
+
+    /* scale */
+    transform: scale(1.05);
+
+    /* white */
+    background: white;
+
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    .title {
+
+        font-size: 2.5rem;
+
+    }
+
+    .nav-container {
+
+        padding: 15px 20px;
+
+    }
+
+    .nav-links {
+
+        gap: 20px;
+
+    }
+
+}

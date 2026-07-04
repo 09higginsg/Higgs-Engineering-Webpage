@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Contact | Higgs Engineering</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+<!-- SAME BACKGROUND SYSTEM -->
+<div id="bg"></div>
+
+<!-- SAME NAVBAR -->
+<nav class="navbar">
+
+  <div class="nav-container">
+
+    <div class="logo-text">
+      HIGGS ENGINEERING
+      <div class="logo-sub">INNOVATIVE DESIGN CONSULTANTS</div>
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+  </div>
+
+</nav>
+<!-- SAME HERO STYLE (CONSISTENT DESIGN SYSTEM) -->
+<section class="hero">
+
+  <div class="container text-center">
+
+    <h1 class="hero-title">Contact Higgs Engineering</h1>
+
+    <p class="hero-sub">
+      Telecom CAD drafting, engineering design, and network planning support.
+    </p>
+
+    <!-- CONTACT INFO -->
+    <div class="mt-5">
+
+      <h4 style="color:#FFD700;">Email</h4>
+
+      <p>
+        <a href="mailto:Higgengineering@gmail.com" style="color:#FFD700; text-decoration:none;">
+          Higgengineering@gmail.com
+        </a>
+      </p>
+
+      <p class="mt-4">
+        We typically respond within 24–48 hours.<br>
+        Send us project details, drawings, or collaboration requests.
+      </p>
+
+    </div>
+
+    <!-- SAME BUTTON STYLE AS HOME -->
+    <div class="mt-5 hero-buttons">
+
+      <button class="btn btn-primary-custom me-3" onclick="toggleChat()">
+        Chat With Us
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SAME CHAT SYSTEM (SHARED MAIN.JS) -->
+<div id="chatButton" onclick="toggleChat()">
+  💬
+  <span id="chatBadge">1</span>
+</div>
+
+<div id="chatWindow">
+
+  <div id="chatTopBar">
+    Higgs agent ✨
+    <span onclick="toggleChat()">✕</span>
+  </div>
+
+  <div id="chatMessages"></div>
+
+  <div id="chatInputArea">
+    <input type="text" id="chatInput" placeholder="Type a message...">
+    <button onclick="sendMessage()">➤</button>
+  </div>
+
+</div>
+
+<!-- SAME FOOTER -->
+<footer class="footer">
+  <p>© 2026 Higgs Engineering. All rights reserved.</p>
+</footer>
+
+<!-- SAME JS FILE FOR ALL PAGES -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
